@@ -46,9 +46,19 @@ def drop(event):
     except Exception as e:
         print(f"Failed to read file: {e}")
 
+def center_window(root, width=800, height=600):
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    x = (screen_width // 2) - (width // 2)
+    y = (screen_height // 2) - (height // 2)
+    root.geometry(f'{width}x{height}+{x}+{y}')
+
 # Create the main window
 root = TkinterDnD.Tk()
 root.title("Text Line Randomizer")
+
+# Center the window
+center_window(root)
 
 # Create a Text widget with a Scrollbar
 frame = ttk.Frame(root)
