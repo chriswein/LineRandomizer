@@ -62,7 +62,7 @@ center_window(root)
 
 # Create a Text widget with a Scrollbar
 frame = ttk.Frame(root)
-frame.pack(expand=True, fill=tk.BOTH, padx=10, pady=10)
+frame.pack(expand=True, fill=tk.BOTH, padx=1, pady=1)
 
 text_area = tk.Text(frame, wrap=tk.WORD)
 text_area.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
@@ -73,7 +73,7 @@ text_area.config(yscrollcommand=scrollbar.set)
 
 # Create a Button widget
 randomize_button = ttk.Button(root, text="Randomize Selected Lines", command=randomize_text)
-randomize_button.pack(side=tk.LEFT, pady=10, padx=5)
+randomize_button.pack(side=tk.LEFT, pady=10, padx=10)
 
 # Create a Label to indicate the hotkey
 hotkey_label = ttk.Label(root, text="(Ctrl+M)")
