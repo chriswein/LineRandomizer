@@ -1,7 +1,7 @@
 # Text Line Randomizer
 
-![Project Header](1.jpg)
-![Project Header](2.jpg)
+![Project Header](./images/1.jpg)
+![Project Header](./images/2.jpg)
 
 ## Description
 
